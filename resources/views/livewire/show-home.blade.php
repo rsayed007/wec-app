@@ -55,7 +55,7 @@
 
     <div>
         <!--About Area Three Start-->
-        <div class="about-area-three">
+        <div class="about-area-three" id="about_section">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 col-lg-5 col-md-4">

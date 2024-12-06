@@ -78,7 +78,7 @@
                         <div class="row">
                             <div class="col-lg-3 col-sm-6">
                                 <div class="logo" style="width: 70px;">
-                                    <a href="index.html"><img src="{{ asset('front/img/logo/logo.png')}}" alt="WEC"></a>
+                                    <a href="{{ route('home') }}" wire:navigate ><img src="{{ asset('front/img/logo/logo.png')}}" alt="WEC"></a>
                                 </div>
                             </div>
                             <div class="col-lg-9 col-sm-6">
@@ -87,13 +87,13 @@
                                         <div class="mainmenu">
                                             <nav>
                                                 <ul id="nav">
-                                                    <li class="current"><a href="index.html">About</a>
+                                                    <li class="current"><a href="{{ route('home') }}#about_section">About</a>
                                                         <ul class="sub-menu">
-                                                            <li><a href="#mission">Mission Statement</a></li>
-                                                            <li><a href="#pillars_wec">Pillars Of WEC</a></li>
+                                                            <li><a href="{{ route('home') }}#mission">Mission Statement</a></li>
+                                                            <li><a href="{{ route('home') }}#pillars_wec">Pillars Of WEC</a></li>
                                                             <li><a href="https://www.wecinternational.org/" target="_blank">WEC International</a></li>
-                                                            <li><a href="#what_makes_us_special" >What Makes Us Special</a></li>
-                                                            <li><a href="#history">History</a></li>
+                                                            <li><a href="{{ route('home') }}#what_makes_us_special" >What Makes Us Special</a></li>
+                                                            <li><a href="{{ route('home') }}#history">History</a></li>
                                                         </ul>
                                                     </li>
 
@@ -369,12 +369,12 @@
                             <div class="footer-menu">
                                 <nav>
                                     <ul>
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="#">Page</a></li>
-                                        <li><a href="donate.html">Donate</a></li>
-                                        <li><a href="blog-with-sidebar.html">Blog</a></li>
-                                        <li><a href="campaign-grid.html">Campaigns</a></li>
-                                        <li><a href="contact.html">Contact us</a></li>
+                                        <li><a href="{{ route('home') }}" wire:navigate >Home</a></li>
+                                        <li><a href="#" wire:navigate >Page</a></li>
+                                        <li><a href="#" wire:navigate >Donate</a></li>
+                                        <li><a href="#" wire:navigate >Blog</a></li>
+                                        <li><a href="#" wire:navigate >Campaigns</a></li>
+                                        <li><a href="#" wire:navigate >Contact us</a></li>
                                     </ul>
                                 </nav>
                             </div>
